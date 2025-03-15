@@ -10,10 +10,11 @@ def load_data():
 
 data = load_data()
 
-# Dashboard Title
+# Judul dashboard
 st.title("Dashboard Analisis Data: Bike Sharing")
 
 # Sidebar
+# masih harus dibenerin
 st.sidebar.header("Filter Data")
 selected_weather = st.sidebar.multiselect(
     "Pilih Kondisi Cuaca:",
@@ -33,7 +34,7 @@ filtered_data = data[
     (data["hr"].isin(selected_weekday))
 ]
 
-# Display filtered data
+# menampilkan filtered data
 st.subheader("Data yang Difilter")
 st.dataframe(filtered_data)
 
