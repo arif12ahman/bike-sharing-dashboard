@@ -23,7 +23,7 @@ selected_weather = st.sidebar.multiselect(
 )
 
 selected_weekday = st.sidebar.multiselect(
-    "Pilih Hari:",
+    "Pilih Jam:",
     options=data["hr"].unique(),
     default=data["hr"].unique()
 )
